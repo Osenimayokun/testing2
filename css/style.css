@@ -210,12 +210,17 @@ body {
     /* bottom: 5vh; Adjust position from bottom */
   }
 }
-@media screen and (min-width: 400px) and (max-width: 600px) and (max-height: 1000px) {
+@media screen and (min-width: 380px) and (max-width: 600px) and (max-height: 1000px) {
   .header {
     max-height: 70vh;
   }
 }
 
+@media screen and (max-width: 800px) and (min-width: 1000px) and (max-height: 690px) {
+  .header {
+    max-height: 120vh;
+  }
+}
 /* Add these media queries for the phone image */
 @media screen and (max-width: 576px) {
   .hero__box-appimg img {
