@@ -203,11 +203,16 @@ body {
     /* bottom: 5vh; Adjust position from bottom */
   }
 }
-@media screen and (min-width: 401px) and (max-width: 500px) {
+@media screen and (min-width: 401px) and (max-width: 576px) {
   .hero__box-appimg {
     left: 17%;
     width: 270px; /* Smaller on mobile */
     /* bottom: 5vh; Adjust position from bottom */
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 600px) and (max-height: 1000px) {
+  .header {
+    max-height: 70vh;
   }
 }
 
