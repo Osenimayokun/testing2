@@ -169,12 +169,6 @@ body {
 } */
 /* Update the header positioning */
 /* Update the header positioning */
-.header {
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-  background-image: linear-gradient(to right bottom, #dcede9 70%, #fff 30%);
-}
 
 /* Update the hero box app image positioning */
 .hero__box-appimg {
@@ -202,14 +196,23 @@ body {
   height: calc(100vh - 10rem);
 }
 
-/* Add these media queries for the phone image */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 400px) {
   .hero__box-appimg {
     left: 15%;
     width: 250px; /* Smaller on mobile */
     /* bottom: 5vh; Adjust position from bottom */
   }
+}
+@media screen and (min-width: 401px) and (max-width: 500px) {
+  .hero__box-appimg {
+    left: 17%;
+    width: 270px; /* Smaller on mobile */
+    /* bottom: 5vh; Adjust position from bottom */
+  }
+}
 
+/* Add these media queries for the phone image */
+@media screen and (max-width: 576px) {
   .hero__box-appimg img {
     max-height: 60vh; /* Smaller height on mobile */
   }
