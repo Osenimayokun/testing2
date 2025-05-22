@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MUVAM - Frequently Asked Questions</title>
+    <link rel="stylesheet" href="css/mediastyle.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Page transition animation -->
+    <div class="page-transition"></div>
+
+    <!-- Overlay for mobile menu -->
+    <div class="overlay"></div>
+
+    <style>
+      .header {
+        position: relative;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("/assets/e8381b8dfba4083e0b8b4c103a8a6a7a92d0aaec.jpg");
+        height: 80vh;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+      }
+      @media screen and (max-width: 576px) {
+        .header {
+          height: 70vh;
+        }
+      }
+
+      .nav {
+        padding: var(--space-3xl);
+        z-index: 10;
+        background-color: transparent;
+      }
+      .nav__link:link,
+      .nav__link:visited {
+        color: #fff;
+      }
+      .nav__link:hover,
+      .nav__link:active {
+        font-weight: var(--font-medium);
+        color: #3ce89d;
+      }
+    </style>
+
+    <header class="header">
+      <!-- NAVIGATION SECTION -->
+      <nav class="nav">
+        <img src="assets" alt="MUVAM logo" class="nav__logo" id="logo" />
+
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="index.html">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="partnership.html">Partnership</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="faq.html">FAQS</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger-menu" aria-label="Menu" style="display: none">
+          <span class="hamburger-menu__icon"></span>
+          <span class="hamburger-menu__icon"></span>
+          <span class="hamburger-menu__icon"></span>
+        </button>
+
+        <a class="nav__link--btn" href="drivers.html">Become a driver</a>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu">
+        <button class="mobile-menu__close" aria-label="Close menu">
+          &times;
+        </button>
+        <ul class="mobile-menu__links">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="index.html">Home</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="partnership.html">Partnership</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="faq.html">FAQS</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+        <a class="mobile-menu__btn" href="drivers.html">Become a driver</a>
+      </div>
+
+      <div
+        class="hero__box animate__fadeInUp"
+        style="text-align: center; padding-top: 15vh"
+      >
+        <h1 style="color: white; font-size: 4.5rem">
+          Frequently Asked Questions
+        </h1>
+        <p style="color: white; font-size: 1.8rem; margin-top: 2rem">
+          Have questions? We're here to guide you every step of the way.
+        </p>
+      </div>
+    </header>
+
+    <section class="section__faq fade-in">
+      <div class="contai">
+        <div class="accordion">
+          <!-- FAQ Item 1 -->
+          <div class="faq__section">
+            <div class="question__box">
+              <div class="faq__text">What is MUVAM?</div>
+              <div class="icon-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="faq__icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="answer__box">
+              <p>
+                MUVAM is a comprehensive platform designed to help users
+                navigate and explore various services and products. We provide
+                innovative solutions tailored to meet your specific needs with
+                cutting-edge technology and exceptional customer support.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div class="faq__section">
+            <div class="question__box">
+              <div class="faq__text">How do I create an account?</div>
+              <div class="icon-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="faq__icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="answer__box">
+              <p>
+                Creating an account is simple! Click on the 'Sign Up' button in
+                the top right corner of our homepage, fill in your details,
+                verify your email address, and you're all set to enjoy our
+                services.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div class="faq__section">
+            <div class="question__box">
+              <div class="faq__text">What payment methods do you accept?</div>
+              <div class="icon-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="faq__icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="answer__box">
+              <p>
+                We accept a wide range of payment methods including credit/debit
+                cards (Visa, Mastercard, American Express), PayPal, bank
+                transfers, and various digital wallets. All transactions are
+                secure and encrypted.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div class="faq__section">
+            <div class="question__box">
+              <div class="faq__text">Is my data secure with MUVAM?</div>
+              <div class="icon-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="faq__icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="answer__box">
+              <p>
+                We take data security very seriously. We use industry-standard
+                encryption protocols and follow strict privacy policies to
+                ensure your personal information remains confidential and
+                protected at all times.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div class="faq__section">
+            <div class="question__box">
+              <div class="faq__text">How can I contact customer support?</div>
+              <div class="icon-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="faq__icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="answer__box">
+              <p>
+                Our customer support team is available 24/7. You can reach us
+                through the 'Contact Us' form on our website, email us at
+                support@muvam.com, or call our toll-free number at
+                1-800-MUVAM-HELP.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 6 -->
+          <div class="faq__section">
+            <div class="question__box">
+              <div class="faq__text">Do you offer refunds?</div>
+              <div class="icon-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="faq__icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="answer__box">
+              <p>
+                Yes, we have a 30-day money-back guarantee policy. If you're not
+                satisfied with our services, you can request a refund within 30
+                days of your purchase. Please refer to our refund policy for
+                more details.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer fade-in">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <h2>MUVAM</h2>
+          <div class="social-icons">
+            <img src="assets/skill-icons_instagram.png" alt="Instagram" />
+            <img src="assets/logos_facebook.png" alt="Facebook" />
+            <img src="assets/devicon_twitter.png" alt="X (Twitter)" />
+            <img src="assets/Group 625751.png" alt="LinkedIn" />
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="#">Term & Condition</a>
+          <a href="#">Privacy policy</a>
+          <a href="#contact">Contact: +1234567890</a>
+        </div>
+
+        <div class="footer-stores">
+          <img
+            src="assets/applelogo.png"
+            alt="download MUVAM on appstore"
+            class="margin-right appdownloadlogo"
+          />
+          <img src="assets/playlogo.png" alt="download MUVAM on playstore" />
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>2025 abc P Ltd, All Right Reserved</p>
+      </div>
+    </footer>
+
+    <script src="src/main.js"></script>
+  </body>
+</html>

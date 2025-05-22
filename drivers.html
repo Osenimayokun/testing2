@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MUVAM - Become a Driver</title>
+    <link rel="stylesheet" href="css/mediastyle.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Page transition animation -->
+    <div class="page-transition"></div>
+
+    <!-- Overlay for mobile menu -->
+    <div class="overlay"></div>
+
+    <style>
+      .header {
+        position: relative;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("/assets/224fdbad8a4df0df946803d90f4266d696351ab0.jpg");
+        height: 90vh;
+        width: 100%;
+        background-position: center;
+        /* object-fit: contain; */
+
+        background-size: cover;
+      }
+      .driver__box-text h1 {
+        font-size: 7rem;
+        max-width: 550px;
+        color: #fff;
+        line-height: 120%;
+      }
+      .nav {
+        padding: var(--space-3xl);
+        z-index: 10;
+        background-color: transparent;
+      }
+      .nav__link:link,
+      .nav__link:visited {
+        color: #fff;
+      }
+      .nav__link:hover,
+      .nav__link:active {
+        font-weight: var(--font-medium);
+        color: #3ce89d;
+      }
+      .hero__box {
+        text-align: left;
+        padding-left: 200px;
+        padding-top: 80px;
+      }
+
+      @media screen and (max-width: 576px) {
+        .driver__box-text h1 {
+          font-size: 30px;
+        }
+        .center {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 100%;
+          transform: translate(-50%, -50%);
+          /* background-color: red; */
+          padding: 0 20px;
+          text-align: center;
+        }
+        .hero__box-downloadimg img {
+          width: 120px;
+        }
+      }
+    </style>
+
+    <header class="header">
+      <!-- NAVIGATION SECTION -->
+      <nav class="nav">
+        <img src="assets" alt="MUVAM logo" class="nav__logo" id="logo" />
+
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="index.html">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="partnership.html">Partnership</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="faq.html">FAQS</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger-menu" aria-label="Menu" style="display: none">
+          <span class="hamburger-menu__icon"></span>
+          <span class="hamburger-menu__icon"></span>
+          <span class="hamburger-menu__icon"></span>
+        </button>
+
+        <a class="nav__link--btn" href="index.html">For Users</a>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu">
+        <button class="mobile-menu__close" aria-label="Close menu">
+          &times;
+        </button>
+        <ul class="mobile-menu__links">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="index.html">Home</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="partnership.html">Partnership</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="faq.html">FAQS</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+        <a class="mobile-menu__btn" href="index.html">For Users</a>
+      </div>
+
+      <section class="hero">
+        <div class="hero__box center">
+          <div class="driver__box-text animate__fadeInUp">
+            <h1>Drive and earn on your own terms with Muvam</h1>
+          </div>
+          <div
+            class="hero__box-downloadimg margin-top animate__fadeInUp animate__delay-1s"
+          >
+            <img
+              src="assets/applelogo.png"
+              alt="download MUVAM on appstore"
+              class="margin-right appdownloadlogo"
+            />
+            <img src="assets/playlogo.png" alt="download MUVAM on playstore" />
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <section class="section__how fade-in">
+      <h3 class="text-align section-headings">Why drivers choose us</h3>
+
+      <div class="how__tabs contai">
+        <div class="how__tab how__tab--1">
+          <div class="how__text--box slide-in-left">
+            <h4 class="how__small-heading">Freedom to choose</h4>
+            <p class="how__paragraph">
+              Take control of your driving experience by selecting ride requests
+              that best fit your preference. Enjoy the flexibility to accept any
+              trips that works for you.
+            </p>
+          </div>
+          <div class="how__imagebox slide-in-right">
+            <img src="assets/Group 625747.png" alt="" />
+          </div>
+        </div>
+
+        <div class="how__tab how__tab--3">
+          <div class="how__text--box slide-in-right how__tab-phone">
+            <h4 class="how__small-heading">Work at your own time</h4>
+            <p class="how__paragraph">
+              Drive when it suits you. With flexible scheduling, you decide when
+              to fix rides. Just total control over your time.
+            </p>
+          </div>
+          <div class="how__imagebox slide-in-left">
+            <img src="assets/Group 625748.png" alt="" />
+          </div>
+          <div class="how__text--box slide-in-right how__tab-laptop">
+            <h4 class="how__small-heading">Work at your own time</h4>
+            <p class="how__paragraph">
+              Drive when it suits you. With flexible scheduling, you decide when
+              to fix rides. Just total control over your time.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section__contact fade-in">
+      <h3 class="text-align section-headings">Contact Us</h3>
+      <p class="text-align contact__paragraph">
+        Phone number: 08012345678
+        <br />
+        Address: 1 Emmanuel Street, Oliver Estate, Enugu, Nigeria.
+      </p>
+      <div class="contai">
+        <div class="contact__grid">
+          <form class="form slide-in-left">
+            <input
+              type="email"
+              class="form__input"
+              placeholder="Email address"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Full Name"
+              class="form__input"
+              required
+            />
+            <input
+              type="text"
+              placeholder="Message"
+              class="form__input form__textarea"
+              required
+            />
+            <button class="form__btn">Submit</button>
+          </form>
+          <div class="contact__img slide-in-right">
+            <img
+              src="assets/9ce69a0ea774d03502e95cc3acc3ef48cbe1f773.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="more__des fade-in">
+      <div class="contai">
+        <div class="des__grid">
+          <div class="des-text__content slide-in-left">
+            <h3 class="des__heading">What are you waiting for?</h3>
+            <p class="des__paragraph">
+              Join hundreds of thousands of happy users.
+            </p>
+            <div class="hero__box-downloadimg margin-top">
+              <img
+                src="assets/applelogo.png"
+                alt="download MUVAM on appstore"
+                class="margin-right appdownloadlogo"
+              />
+              <img
+                src="assets/playlogo.png"
+                alt="download MUVAM on playstore"
+              />
+            </div>
+          </div>
+          <div class="des--img__content slide-in-right">
+            <img
+              src="assets/8b54deab7c114ac27583cb228e9d0c3f94bfa8a5.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer fade-in">
+      <div class="footer-top">
+        <div class="footer-logo">
+          <h2>MUVAM</h2>
+          <div class="social-icons">
+            <img src="assets/skill-icons_instagram.png" alt="Instagram" />
+            <img src="assets/logos_facebook.png" alt="Facebook" />
+            <img src="assets/devicon_twitter.png" alt="X (Twitter)" />
+            <img src="assets/Group 625751.png" alt="LinkedIn" />
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="#">Term & Condition</a>
+          <a href="#">Privacy policy</a>
+          <a href="#contact">Contact: +1234567890</a>
+        </div>
+
+        <div class="footer-stores">
+          <img
+            src="assets/applelogo.png"
+            alt="download MUVAM on appstore"
+            class="margin-right appdownloadlogo"
+          />
+          <img src="assets/playlogo.png" alt="download MUVAM on playstore" />
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>2025 abc P Ltd, All Right Reserved</p>
+      </div>
+    </footer>
+
+    <script src="src/main.js"></script>
+  </body>
+</html>
